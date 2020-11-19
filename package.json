@@ -1,18 +1,31 @@
 {
   "name": "tre-cli-about",
   "version": "1.0.0",
-  "description": "",
+  "description": "cli tool that publishes about messages on an ssb network",
   "main": "index.js",
+  "bin": {
+    "tre-cli-about": "bin.js"
+  },
   "scripts": {
+    "make-readme": "node build/make-readme.js > README.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.2.0",
+    "pull-file": "^1.1.0",
+    "pull-stdio": "^1.0.0",
+    "pull-stream": "^3.6.14",
+    "ssb-keys": "^8.0.0",
+    "ssb-zero-conf-client": "^1.0.1"
+  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/regular/tre-cli-about.git"
   },
-  "keywords": [],
-  "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/regular/tre-cli-about/issues"
   },
